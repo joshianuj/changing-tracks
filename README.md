@@ -6,9 +6,13 @@ internals, distributed training, and interpretability — the gap between
 "infra engineer" and "systems engineer at a research org."
 
 ## Why
+I've been a full-stack/infra engineer for 10 years. I'm good at it, but
+I want to reinvent myself — build something new on top of what I already
+know.
 
-[2-3 honest sentences on your actual motivation — be specific, not generic.
-This is the thing people will actually remember about you.]
+This repo is me learning ML and AI systems from the ground up, in public,
+over the next 8-10 months. No pretending I already know this — just the
+actual process, as it happens.
 
 ## Structure
 
