@@ -15,3 +15,28 @@ Thinking of vectors geometrically (arrows, span, basis) rather than just as list
 What's still fuzzy:
 
 Need to get more comfortable moving fluidly between the geometric picture (arrows, span) and the algebraic one (just numbers in a list) — right now I'm translating between them slowly.
+
+
+Day 2 — Matrix Transformations
+
+What I covered:
+
+3Blue1Brown, "Essence of Linear Algebra" — linear transformations and matrices
+
+Notes:
+
+A matrix is just a record of where the basis vectors land after a transformation. Each column of the matrix tells you where one basis vector (i-hat, j-hat, etc.) ends up.
+To transform any vector, you don't need to think about it directly — just express it as a linear combination of the basis vectors, then apply the same combination to where those basis vectors landed.
+Linear transformation = a transformation that keeps grid lines parallel and evenly spaced, and keeps the origin fixed. This is why matrices can represent them so compactly — the whole transformation is determined by just tracking the basis vectors.
+Matrix-vector multiplication finally clicked as "applying a transformation," not just a mechanical row-times-column procedure. That reframing made the formula feel obvious instead of memorized.
+Composing two transformations = multiplying their matrices. Order matters — makes sense once you think of it as "apply this transformation, then that one," not just abstract algebra.
+
+Connecting to Day 1:
+
+Day 1 was about vectors, span, and basis. Day 2 built directly on top: matrices are just a compact way of describing what happens to the basis vectors from Day 1 under a transformation. Span from Day 1 also explains why a transformation can "collapse" space — if the transformed basis vectors become linearly dependent, the span shrinks (e.g. 2D collapses to a line).
+
+What's still fuzzy:
+
+Determinants — briefly mentioned as "how much a transformation scales area," but haven't gone deep yet. Queued for Day 3 or 4.
+
+Next: determinants, and starting the PyTorch 60-min blitz in parallel.
