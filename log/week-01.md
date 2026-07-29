@@ -40,3 +40,32 @@ What's still fuzzy:
 Determinants — briefly mentioned as "how much a transformation scales area," but haven't gone deep yet. Queued for Day 3 or 4.
 
 Next: determinants, and starting the PyTorch 60-min blitz in parallel.
+
+
+Day 3 — Determinants & Starting PyTorch
+
+What I covered:
+
+3Blue1Brown, "Essence of Linear Algebra" — determinants
+PyTorch 60-Minute Blitz — started tensors section
+
+Notes:
+
+Determinant = the factor by which a transformation scales area (2D) or volume (3D). A determinant of 2 means the transformation doubles area; a determinant of 0.5 means it halves it.
+Determinant of 0 means the transformation squashes space into a lower dimension (e.g. 2D collapses onto a line or a point) — this ties directly back to Day 2's note on span shrinking when transformed basis vectors become linearly dependent. Same idea, now with a number attached to it.
+Negative determinant = the transformation flips orientation (like flipping a piece of paper over), in addition to scaling.
+Starting PyTorch: a tensor is basically the code-level version of the vectors/matrices from the last two days — just N-dimensional arrays with operations defined on them. Comforting to see the math translate almost directly into torch.tensor() calls.
+First hands-on moment: creating tensors, checking shapes, and doing basic tensor math (+, *, matrix multiply via torch.matmul) and seeing it behave exactly like the transformations from Day 2.
+
+Connecting to Days 1-2:
+
+Day 1: vectors, span, basis. Day 2: matrices as transformations of the basis. Day 3 ties a single number (the determinant) to what a transformation does to space — and then PyTorch tensors give a way to actually compute all of this instead of just visualizing it.
+
+What's still fuzzy:
+
+Determinants in higher dimensions (3D+) — the area/volume intuition is clear in 2D/3D, less clear how it generalizes further. Will revisit once it's actually needed.
+
+Next step:
+
+Finish the PyTorch 60-min blitz (autograd section next).
+Weekend 1 target: implement linear regression and logistic regression from scratch in PyTorch — hand-write the gradient descent loop once, no nn.Module shortcuts.
