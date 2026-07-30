@@ -69,3 +69,27 @@ Next step:
 
 Finish the PyTorch 60-min blitz (autograd section next).
 Weekend 1 target: implement linear regression and logistic regression from scratch in PyTorch — hand-write the gradient descent loop once, no nn.Module shortcuts.
+
+
+## Day 4 — Review of Days 1-3
+ 
+**What I covered:**
+- Reviewed Days 1-3: vectors/span/basis, matrix transformations,
+  determinants, and the start of PyTorch tensors.
+**Notes:**
+- Tried explaining each concept out loud from memory before checking
+  notes — caught a couple of gaps this way:
+  - Could describe *what* a determinant of 0 means but not *why* it
+    follows from the basis vectors becoming linearly dependent. Reworked
+    that link until it made sense from first principles.
+  - Mixed up the order when composing two transformations — fixed by
+    mapping "apply this, then that" onto matrix multiplication order.
+- Redid the Day 3 PyTorch tensor exercises from memory — mostly solid, a
+  few syntax details forgotten.
+**What's still fuzzy:**
+- Determinants in higher dimensions — not blocking anything yet, leaving
+  it for now.
+**Next step:**
+- Finish the PyTorch blitz (autograd), then Weekend 1: linear and logistic
+  regression from scratch, hand-written gradient descent loop.
+ 
