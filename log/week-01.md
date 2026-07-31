@@ -90,6 +90,5 @@ Weekend 1 target: implement linear regression and logistic regression from scrat
 - Determinants in higher dimensions — not blocking anything yet, leaving
   it for now.
 **Next step:**
-- Finish the PyTorch blitz (autograd), then Weekend 1: linear and logistic
-  regression from scratch, hand-written gradient descent loop.
+
  
