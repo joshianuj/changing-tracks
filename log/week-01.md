@@ -95,7 +95,7 @@ Day 1: vectors, span, basis. Day 2: matrices as transformations of the basis. Da
 - Rank = the number of dimensions in the output after the transformation (i.e. the dimension of the column space). Full rank means no information/dimension is lost — this is the same condition as having a nonzero determinant and being invertible. Seeing rank, determinant, and invertibility as three views of the same underlying fact was the biggest "click" today.
 
 **Connecting to Days 1-4:**
-Day 1-2 gave the vocabulary (span, basis, transformation). Day 3 attached a number (determinant) to what a transformation does to space. Day 5 closes the loop: whether that number is zero decides whether the transformation is reversible, and the inverse matrix is the concrete "undo" operation — directly explaining why Ax = b sometimes has no solution or infinitely many (when A isn't invertible).
+Day 1-2 gave the vocabulary (span, basis, transformation). Day 3 attached a number (determinant) to what a transformation does to space. Day 6 closes the loop: whether that number is zero decides whether the transformation is reversible, and the inverse matrix is the concrete "undo" operation — directly explaining why Ax = b sometimes has no solution or infinitely many (when A isn't invertible).
 
 **What's still fuzzy:**
 - Actually computing an inverse by hand for anything bigger than 2x2 (e.g. via row reduction) — have the concept solid, haven't drilled the mechanics yet.
@@ -103,3 +103,22 @@ Day 1-2 gave the vocabulary (span, basis, transformation). Day 3 attached a numb
 **Next step:**
 - Practice computing 2x2 and 3x3 inverses by hand for fluency.
 - Resume the PyTorch autograd section (still pending from Day 3/4).
+
+---
+# Day 7 — Inverse Practice & PyTorch Autograd
+
+**What I covered:**
+- Hand-computed matrix inverses for fluency:
+  - 2x2 inverses using the shortcut formula (swap diagonal, negate off-diagonal, divide by determinant)
+  - 3x3 inverses via row reduction: augment `[A | I]`, row-reduce until the left side is the identity
+  - Included a singular matrix (det = 0) on purpose, to see "no inverse exists" show up directly in the row reduction rather than just knowing it in theory
+- PyTorch 60-Minute Blitz — autograd section (queued since Day 3, carried through Day 4 and Day 5) — done
+
+**Connecting to Days 1-5:**
+Day 5 established that invertibility, nonzero determinant, and full rank are the same fact viewed three ways, but left the actual hand mechanics of computing an inverse undone. Day 6 closed that gap with practice, then moved into PyTorch autograd — the mechanism that will actually compute the derivatives needed for gradient descent in the Weekend 1 target (linear/logistic regression from scratch).
+
+**What's still fuzzy:**
+- 
+
+**Next step:**
+- Eigenvectors/eigenvalues (held back from Day 6 to avoid stacking too much in one day)
