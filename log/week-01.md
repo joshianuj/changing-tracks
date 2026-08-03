@@ -117,6 +117,8 @@ Day 1-2 gave the vocabulary (span, basis, transformation). Day 3 attached a numb
 **Connecting to Days 1-5:**
 Day 5 established that invertibility, nonzero determinant, and full rank are the same fact viewed three ways, but left the actual hand mechanics of computing an inverse undone. Day 6 closed that gap with practice, then moved into PyTorch autograd — the mechanism that will actually compute the derivatives needed for gradient descent in the Weekend 1 target (linear/logistic regression from scratch).
 
+# Day 8 — Eigen Vector and its use
+
 **What's still fuzzy:**
 - 
 
