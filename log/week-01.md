@@ -120,7 +120,7 @@ Day 5 established that invertibility, nonzero determinant, and full rank are the
 # Day 8 — Eigen Vector and its use
 # Day 9 - Eigen and its computation
 # Day 10 - Revise previous days
-# Day 11 and 12 - Hands on with Pytorch
+# Day 11, 12 and 13 - Hands on with Pytorch
 
 **What's still fuzzy:**
 - 

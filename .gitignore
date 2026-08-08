@@ -1,0 +1,62 @@
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.dylib
+*.pyd
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+.installed.cfg
+*.egg
+.eggs/
+build/
+dist/
+*.manifest
+*.spec
+.Python
+env/
+venv/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+
+# PyTorch / AI artifacts
+*.pt
+*.pth
+*.ckpt
+*.ckpt.*
+*.h5
+*.hdf5
+*.t7
+*.pkl
+*.pickle
+*.tar
+*.onnx
+*.weights
+runs/
+wandb/
+mlruns/
+logs/
+.tensorboard/
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Other common
+*.log
+*.sqlite3
